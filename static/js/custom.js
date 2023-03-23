@@ -127,6 +127,14 @@ function narnFail() {
     })
 }
 
+function downloadVideo() {
+    var videoElement = document.getElementById("video")
+    a.href = videoElement;
+    a.download = "video.mp4";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
 
 window.addEventListener('DOMContentLoaded', function () {
     document.getElementById('view_aweme').addEventListener('click', function () {
